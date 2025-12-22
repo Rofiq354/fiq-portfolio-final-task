@@ -1,4 +1,4 @@
-<nav class="navbar navbar-expand-lg fixed-top" style="background-color: white;">
+<nav class="navbar navbar-expand-lg fixed-top">
   <div class="container">
     <a class="navbar-brand nav-link" href="#" data-target="hero-section">
       <img src="public/images/brand.png" alt="Logo" height="24" />
@@ -17,13 +17,16 @@
 
       <!-- toggler + offcanvas -->
       <div
-        class="offcanvas offcanvas-end"
+        class="offcanvas offcanvas-end bg-theme-color"
         tabindex="-1"
         id="offcanvasNavbar"
         aria-labelledby="offcanvasNavbarLabel"
       >
         <div class="offcanvas-header">
-          <h5 class="offcanvas-title" id="offcanvasNavbarLabel"><a
+          <h5
+            class="offcanvas-title text-theme-color"
+            id="offcanvasNavbarLabel"
+          ><a
               class="nav-link"
               href="#"
               data-target="hero-section"
@@ -43,9 +46,8 @@
           >
             <li class="nav-item">
               <a
-                class="nav-link"
+                class="nav-link text-theme-color"
                 href="#"
-                style="color: #6c757d;"
                 data-target="techStack-section"
                 data-bs-dismiss="offcanvas"
                 aria-label="Close"
@@ -53,9 +55,8 @@
             </li>
             <li class="nav-item">
               <a
-                class="nav-link"
+                class="nav-link text-theme-color"
                 href="#"
-                style="color: #6c757d;"
                 data-target="experience-section"
                 data-bs-dismiss="offcanvas"
                 aria-label="Close"
@@ -63,9 +64,8 @@
             </li>
             <li class="nav-item">
               <a
-                class="nav-link"
+                class="nav-link text-theme-color"
                 href="#"
-                style="color: #6c757d;"
                 data-target="project-section"
                 data-bs-dismiss="offcanvas"
                 aria-label="Close"
@@ -76,7 +76,11 @@
       </div>
 
       <!-- dark mode -->
-      <div id="dark-mode" class="dark-mode">
+      <div
+        id="theme-toggle"
+        class="theme-toggle text-theme-color position-relative"
+        aria-label="Toggle dark mode"
+      >
         <i class="bi bi-brightness-high" style="font-size: 20px;"></i>
         {{! <i class="bi bi-moon" style="font-size: 20px;"></i> }}
       </div>
