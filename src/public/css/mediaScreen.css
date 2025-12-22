@@ -1,0 +1,86 @@
+@media (min-width: 1200px) {
+  .container,
+  .container-lg,
+  .container-md,
+  .container-sm,
+  .container-xl {
+    max-width: 1240px;
+  }
+}
+
+@media (min-width: 992px) {
+  /* Hero Section */
+  .hero-avatar {
+    width: 320px;
+    height: 320px;
+  }
+
+  .hero-title {
+    font-size: 3.75rem;
+  }
+
+  .hero-subtitle {
+    font-size: 1.5rem;
+  }
+
+  .hero-text {
+    font-size: 1.2rem;
+  }
+
+  .social-link {
+    width: 400px;
+  }
+
+  /* Contact Section */
+  .contact-title {
+    font-size: 2.75rem;
+  }
+
+  .contact-text {
+    font-size: 1.05rem;
+  }
+
+  /* Footer Section */
+  .footer-text {
+    font-size: 0.95rem;
+  }
+}
+
+@media (min-width: 768px) {
+  /* Hero Section */
+  .hero-avatar {
+    width: 260px;
+    height: 260px;
+    margin-inline: 0;
+  }
+
+  .hero-title {
+    font-size: 2.75rem;
+  }
+
+  .hero-subtitle {
+    font-size: 1.25rem;
+  }
+
+  .hero-text {
+    font-size: 1.05rem;
+  }
+
+  /* Contact Section */
+  .contact-title {
+    font-size: 2.25rem;
+  }
+
+  .contact-text {
+    font-size: 1rem;
+  }
+
+  /* Footer Section */
+  .footer-text {
+    font-size: 1rem;
+  }
+
+  .footer-link {
+    font-size: 1.25rem;
+  }
+}
