@@ -1,7 +1,12 @@
 * {
   font-family: "Lato", sans-serif;
 }
-.dark-mode {
+
+body {
+  background-color: var(--bg-color);
+}
+
+.theme-toggle {
   cursor: pointer;
 }
 
@@ -69,7 +74,7 @@
 .hero-text {
   font-size: 0.95rem;
   line-height: 1.7;
-  color: #6c757d;
+  color: var(--muted-color);
 }
 
 .social-link {
@@ -110,7 +115,7 @@
 
 .tech-track {
   display: flex;
-  gap: 3rem;
+  gap: 1rem;
   width: max-content;
   animation: scroll-left 25s linear infinite;
 }
@@ -121,6 +126,13 @@
   opacity: 0.85;
 }
 
+.tech-item .img {
+  padding: 3px 10px;
+  width: max-content;
+  border-radius: 0.8rem;
+  background-color: #ffffff27;
+}
+
 .tech-item img {
   width: 48px;
   height: 48px;
@@ -129,7 +141,7 @@
 
 .tech-item span {
   font-size: 0.9rem;
-  color: #6c757d;
+  color: var(--muted-color);
 }
 
 .tech-marquee::before,
@@ -144,12 +156,12 @@
 
 .tech-marquee::before {
   left: 0;
-  background: linear-gradient(to right, #fff, transparent);
+  background: linear-gradient(to right, var(--bg-color), transparent);
 }
 
 .tech-marquee::after {
   right: 0;
-  background: linear-gradient(to left, #fff, transparent);
+  background: linear-gradient(to left, var(--bg-color), transparent);
 }
 
 /* Animation */
@@ -172,7 +184,6 @@
   width: 64px;
   height: 64px;
   object-fit: contain;
-  background-color: #fff;
   border-radius: 0.75rem;
 }
 
@@ -184,23 +195,22 @@
 .experience-desc li {
   margin-bottom: 0.5rem;
   font-size: 0.95rem;
-  color: #6c757d;
+  color: var(--muted-color);
   line-height: 1.6;
 }
 
 .tech-pill {
   padding: 0.35rem 0.75rem;
-  background-color: #f1f3f5;
+  background-color: #d3caca27 !important;
   border-radius: 999px;
-  font-size: 0.75rem;
-  font-weight: 500;
-  color: #495057;
+  font-size: 0.75rem !important;
+  font-weight: 500 !important;
+  color: var(--muted-color) !important;
 }
 
 /* Project Section ---------------------------------------------------------*/
 
 .project-card {
-  background: #fff;
   border-radius: 1rem;
   overflow: hidden;
   box-shadow: 0 10px 30px rgba(0, 0, 0, 0.05);
@@ -213,7 +223,7 @@
 }
 
 .project-image {
-  background: #f3f4f6;
+  background: #dadde45d;
   padding: 2rem;
   text-align: center;
 }
@@ -246,25 +256,20 @@
 }
 
 .contact-link {
-  color: #6c757d;
+  color: var(--muted-color);
   text-decoration: none;
   font-size: 0.9rem;
   transition: color 0.2s ease;
 }
 
 .contact-link:hover {
-  color: #212529;
+  color: var(--text-color);
 }
 
-/* Contact Section ---------------------------------------------------------*/
-
-.footer {
-  background-color: #fff;
-}
-
+/* Footer Section ---------------------------------------------------------*/
 .footer-text {
   font-size: 0.85rem;
-  color: #6c757d;
+  color: var(--muted-color);
 }
 
 .footer-link {
@@ -274,6 +279,6 @@
 }
 
 .footer-link:hover {
-  color: #212529;
+  color: var(--text-color);
   transform: translateY(-2px);
 }

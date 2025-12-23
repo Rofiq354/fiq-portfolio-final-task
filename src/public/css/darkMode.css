@@ -1,0 +1,72 @@
+:root {
+  --bg-color: #ffffff;
+  --text-color: #212529;
+  --heading-color: #000000;
+  --muted-color: #585f66;
+  --btn-bg-color: #0f172a;
+  /* --card-bg: #ffffff; */
+  --border-color: #e9ecef;
+  --toggle-icon: url("/public/icons/toggle-icon-dark.svg");
+  --close-icon: url("/public/icons/close-icon-dark.svg");
+}
+
+[data-theme="dark"] {
+  --bg-color: #0f172a;
+  --text-color: #e5e7eb;
+  --heading-color: #ffffff;
+  --muted-color: #9ca3af;
+  --btn-bg-color: #ffffff;
+  /* --card-bg: #ffffff; */
+  --border-color: #1f2933;
+  --toggle-icon: url("/public/icons/toggle-icon-light.svg");
+  --close-icon: url("/public/icons/close-icon-light.svg");
+}
+
+.bg-theme-color {
+  background-color: var(--bg-color) !important;
+}
+
+.btn-theme-color {
+  background-color: var(--btn-bg-color) !important;
+  color: var(--bg-color) !important;
+}
+
+.text-theme-color {
+  color: var(--muted-color) !important;
+}
+
+.h-theme-color {
+  color: var(--heading-color);
+}
+
+.navbar-toggler-icon {
+  background-image: var(--toggle-icon) !important;
+}
+
+.btn-close {
+  background-image: var(--close-icon) !important;
+}
+
+.card-theme-color {
+  background-color: #ffffff0e;
+}
+
+.theme-transition {
+  position: fixed;
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  pointer-events: none;
+  transform: scale(0);
+  z-index: 9999;
+  transition: transform 0.7s ease-out;
+  z-index: -1;
+}
+
+.theme-transition.light {
+  background-color: #ffffff;
+}
+
+.theme-transition.dark {
+  background-color: #0f172a;
+}
